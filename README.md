@@ -1,4 +1,4 @@
-# Income-Expense Tracker
+# Income-Expense Tracker JS
 This workshop is designed to help you create an income and expense tracking application using JavaScript, HTML, and Tailwind CSS. The application allows users to add, remove, and track their transactions to see their current balance, total income, and total expenses.
 
 $\color{red}{\textsf{This project is a clone from my previous GitHub repository.}} $<a href="https://github.com/PharadolBrown/PortfolioJavascript/tree/main/RecordFinancial" traget="_blank">  this repository</a>

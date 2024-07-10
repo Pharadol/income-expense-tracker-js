@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Income-Expense Accounting Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+    
+<body class="bg-gray-100">
+    <h2 class="text-center text-3xl sm:text-4xl sm:font-bold py-10 sm:py-20">Income-Expense Accounting</h2>
+    <div class="container mx-auto lg:w-4/12 w-11/12 text-xl sm:text-2xl sm:font-bold pb-20">
+        <h4>Balance (baht)</h4>
+        <h1 id="balance" class="text-4xl sm:text-5xl mt-2">฿0.00</h1>
+        <div class="income-expense-container sm:text-3xl text-xl mt-5 mb-10 sm:my-10 grid grid-cols-2 text-center rounded-md shadow-md bg-white px-5 py-5">
+            <div class="border-r-2 sm:py-10">
+                <h4>income</h4>
+                <p id="moneyPlus" class="money plus mt-5 text-green-500"></p>
+            </div>
+            <div class="sm:py-10">
+                <h4>expense</h4>
+                <p id="moneyMinus" class="money minus mt-5 text-red-600"></p>
+            </div>
+        </div>
+        <h3 class="sm:py-5 py-2 mb-5 border-b-2">Transaction history</h3>
+        <ul id="list" class="list font-thin mb-10">
+
+        </ul>
+        <h3 class="sm:py-5 py-2 mb-10 border-b-2">Add transaction</h3>
+        <form id="form">
+            <div class="form-control flex flex-col font-light mb-6">
+                <label for="text">Transaction title</label>
+                <input type="text" name="" id="text" placeholder="enter title" class="h-10 sm:h-16 px-3 rounded-sm my-3">
+            </div>
+            <div class="form-control flex flex-col font-light">
+                <label for="amount">amount 
+                    (+ income , - expense)
+                </label>
+                <input type="number" name="" id="amount" placeholder="enter amount" class="h-10 sm:h-16 px-3 rounded-sm my-3">
+            </div>
+            <button type="submit" class="btn bg-green-500 text-white sm:py-4 py-2 px-4 w-full rounded-md mt-5 hover:bg-green-600 transition duration-300">add transaction</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

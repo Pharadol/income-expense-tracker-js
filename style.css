@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.list li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  margin: 0 0 5px 0;
+}
+.list button {
+  overflow: visible;
+  position: absolute;
+  background-color: rgb(243, 51, 26);
+  color: #fff;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out,background-color 0.4s ease-in-out;
+}
+.list button:hover {
+  background-color: rgb(201, 40, 19);
+}
+.list li:hover button {
+  opacity: 1;
+}
+.list li .number {
+  transition: all 0.4s ease-in-out;
+  padding: 15px 0;
+  padding-right: 10px;
+}
+.list li:hover .number {
+  transform: translateX(-46px);
+  padding-right: 15px;
+}
+.list .minus{
+  border-right: 8px solid rgb(223, 26, 26);
+}
+.list .plus {
+  border-right: 8px solid rgb(5, 161, 109);
+}
